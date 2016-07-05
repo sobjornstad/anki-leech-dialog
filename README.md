@@ -10,9 +10,9 @@ This add-on can be downloaded from its [AnkiWeb page](null).
 You will also want to **turn off automatic leech suspension** in all of your deck options groups if it’s currently on – otherwise leeches will both get suspended *and* have whatever option you choose in the dialog applied, which is probably not what you want. The option to change is *Leech action* in the Lapses tab; you should set it to “Tag only.”
 
 ## Use
-A dialog with six options will be presented whenever a leech is encountered, right after you press Again.
+A dialog with six options will be presented whenever a leech is encountered, right after you press Again:
 
-[insert image here]
+<img src="screenshots/example_leech_dialog.png">
 
 At the top a few data points about the card are presented to help you make your decision:
 
