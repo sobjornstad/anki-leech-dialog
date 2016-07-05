@@ -5,7 +5,7 @@ This is an add-on to [Anki](http://ankisrs.net) to make it easy to deal with [le
 While Anki notifies you of and tags and suspends leeches as soon as it detects them, the default behavior requires you to carry out periodic maintenance on your deck by looking for cards that have been marked as leeches and dealing with them. If you prefer a more proactive approach where you deal with leeches as soon as they occur, this add-on is for you.
 
 ## Installation
-This add-on can be downloaded from its [AnkiWeb page](null).
+This add-on can be downloaded from its [AnkiWeb page](https://ankiweb.net/shared/info/359861680).
 
 You will also want to **turn off automatic leech suspension** in all of your deck options groups if it’s currently on – otherwise leeches will both get suspended *and* have whatever option you choose in the dialog applied, which is probably not what you want. The option to change is *Leech action* in the Lapses tab; you should set it to “Tag only.”
 
