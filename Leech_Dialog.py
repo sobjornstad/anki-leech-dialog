@@ -194,4 +194,15 @@ def leechHook(card):
     ld = LeechDialog(mw, card)
     ld.exec_()
 
+    # Since this add-on doesn't work on mobile, or anywhere it's not installed,
+    # it's useful to keep separate track of which notes are leeches that have
+    # been marked but not handled and which are leeches that have been marked
+    # and dealt with in the dialog. Therefore, anytime this add-on handles a
+    # card, it will be tagged 'leech_dialog' rather than 'leech' (and any
+    # 'leech' tag present from before will be removed).
+    n = card.note()
+    n.delTag("leech")
+    n.addTag("leech_dialog")
+    n.flush()
+
 addHook("leech", leechHook)
