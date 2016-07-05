@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>256</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Leech</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;Leeched 2 times.&lt;br&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Lapses&lt;/span&gt;: 8&lt;br&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Last interval&lt;/span&gt;: 30d&lt;br&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Ease&lt;/span&gt;: 145%&lt;br&gt;&lt;span style=&quot;font-weight:600;&quot;&gt;Total time&lt;/span&gt;: 5m23s&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="0">
+      <widget class="QPushButton" name="suspendButton">
+       <property name="toolTip">
+        <string>Suspend this card.
+This may allow you time to learn other cards that are interfering,
+or you can suspend the card and deal with the problem later.</string>
+       </property>
+       <property name="text">
+        <string>&amp;Suspend</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="deleteButton">
+       <property name="toolTip">
+        <string>Delete this card's note.
+A difficult and low-priority note may not be worth studying anymore.</string>
+       </property>
+       <property name="text">
+        <string>&amp;Delete</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="closeEditorLabel">
+       <property name="text">
+        <string>Please close the editor to continue.</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="addNotesButton">
+       <property name="toolTip">
+        <string>Add new notes to your collection.
+This may be useful if you can split the current card into several easier cards.</string>
+       </property>
+       <property name="text">
+        <string>&amp;Add notes...</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="editButton">
+       <property name="toolTip">
+        <string>Edit this card.
+If the phrasing of the question is causing you difficulty, you can fix it now.</string>
+       </property>
+       <property name="text">
+        <string>&amp;Edit...</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="changeDeckButton">
+       <property name="toolTip">
+        <string>Move this card to a different deck.
+You may wish to move difficult cards somewhere else,
+for extra study or to get them out of your way temporarily.</string>
+       </property>
+       <property name="text">
+        <string>C&amp;hange deck</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="ignoreButton">
+       <property name="toolTip">
+        <string>Continue reviewing without doing anything about this leech.
+If you think you just need a little bit longer to learn this card, you can continue studying it as is.
+This option should be used sparingly – overuse can waste massive amounts of study time.</string>
+       </property>
+       <property name="text">
+        <string>&amp;Continue</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
