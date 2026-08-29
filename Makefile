@@ -1,15 +1,18 @@
 .PHONY: all forms zip clean
 
 all: forms zip
-forms: leechdialog/leechdialog.py
+forms: src/leechdialog.py
 zip: build.zip
 
-leechdialog/leechdialog.py: designer/leechdialog.ui 
-	pyuic4 designer/leechdialog.ui > leechdialog/leechdialog.py
+src/leechdialog.py: designer/leechdialog.ui 
+	pyuic5 $^ > $@
 
-build.zip: leechdialog/leechdialog.py Leech_Dialog.py
-	rm -f build.zip
-	zip -r build.zip leechdialog/ Leech_Dialog.py
-
+build.zip: src/*
+	rm -f $@
+	rm -rf src/__pycache__
+	( cd src/; zip -r ../$@ * )
 clean:
+	rm -f src/*.pyc
+	rm -rf src/__pycache__
+	rm -f src/leechdialog.py
 	rm -f build.zip

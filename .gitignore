@@ -1,4 +1,7 @@
-*.un~
-*.zip
+src/import_dialog.py
+build.zip
+**/.mypy_cache/*
 *.pyc
-leechdialog/leechdialog.py
+__pycache__/*
+*.un~
+*.html
