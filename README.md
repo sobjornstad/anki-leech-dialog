@@ -41,3 +41,9 @@ A brief summary of the possible reasons for choosing each option, as presented a
 As with most other add-ons, this add-on does not function on AnkiWeb or mobile devices. Even if it could, it might not always be convenient to deal with leeches at the time on a small screen. For this reason, if you study on such devices, you will periodically want to check through the leeches that were marked on that device. By default, Anki tags all notes it marks as leeches `leech`. So that you can separate leeches that were marked while you were using this add-on (and probably don’t need further work) from leeches that were marked without this add-on (which you probably haven’t dealt with yet), leeches detected on devices with this add-on are instead tagged `leech_dialog` and are *not* tagged `leech`.
 
 In short, searching for `tag:leech` should find the notes that need work, not ones that you’ve already considered.
+
+## AI use
+
+As of this writing, I have not used any kind of AI agents or assistance to work
+on any part of the leech dialog. I may choose to make occasional use of AI agents for
+changes in the future. Documentation will remain 100% human-written.
